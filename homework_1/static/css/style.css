@@ -1,0 +1,154 @@
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    gap: 850px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    background-color: #222222;
+
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.header__menu {
+    width: 200px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.menu_link:hover {
+    color: #F16D7F;
+}
+
+.products {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 360px);
+    justify-content: center;
+}
+
+.product {
+    padding-top: 10px;
+    width: 360px;
+    background-color: #dcdbdb;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 12px;
+}
+
+.product__img {
+    width: 320px;
+    height: 380px;
+}
+
+.product_name {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.product_text {
+    width: 300px;
+    color: #5D5D5D;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.price {
+    color: #F16D7F;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.button {
+    padding: 8px;
+    color: #F26376;
+    font-size: 14px;
+    font-weight: 400;
+    border-style: solid;
+    border-color: #FF6A6A;
+    background-color: #FFF;
+}
+
+.button:hover {
+    color: #FFF;
+    background-color: #FF6A6A;
+}
+
+.down_footer {
+    height: 80px;
+    background-color: #222222;
+    display: flex;
+    gap: calc(100% / 2 - 50px);
+    justify-content: center;
+    align-items: center;
+}
+
+.brand {
+    padding-top: 6px;
+    padding-bottom: 7px;
+    color: #FBFBFB;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.social_media {
+    display: flex;
+    gap: 7px;
+}
+
+.social_media_button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 31px;
+    height: 32px;
+    border: 0px;
+}
+
+.social_media_button:hover {
+    background-color: #F16D7F;
+}
+
+.social_media_button:hover .social_media_logo {
+    fill: #FFFFFF;
+}

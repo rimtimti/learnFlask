@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Одежда
+{% endblock %}
+
+{% block content %}
+{% for cloth in clothes_list %}
+<article class="product flex_center">
+    <figure class="product_content category">
+        <img class="product__img" src={{cloth.photo}} alt="Card Product">
+        <figcaption class="content">
+            <h3 class="product_name">{{cloth.name}}</h3>
+            <p class="product_text">{{cloth.description}}</p>
+            <h3 class="price">Цена: {{cloth.cost}} рублей</h3>
+            <button class="button">
+                <p>В корзину</p>
+            </button>
+        </figcaption>
+    </figure>
+</article>
+{%endfor%}
+{% endblock %}
