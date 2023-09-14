@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block content %}
+<figure class="register">
+    <p class="input">Успешная авторизация!</p>
+    <p class="input">Здравствуйте, {{name}}!</p>
+    <p class="input">{{email}}</p>
+    <form class="form_auth_style" action="#" method="post">
+        <button class="button input" type="submit" name="base">Выход</button>
+    </form>
+</figure>
+{% endblock %}
