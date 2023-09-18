@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    {% for book in books %}
+    <p class="col-12 col-md-6">{{ book }}</p>
+    {% endfor %}
+</div>
+{% endblock %}
