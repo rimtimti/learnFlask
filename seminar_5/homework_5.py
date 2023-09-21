@@ -42,7 +42,7 @@ async def get_users(request: Request):
     )
 
 
-@app.get("/registration/", response_class=HTMLResponse)
+@app.post("/", response_class=HTMLResponse)
 async def registration(request: Request):
     return templates.TemplateResponse("registration.html", {"request": request})
 
