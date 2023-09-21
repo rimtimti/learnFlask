@@ -42,12 +42,12 @@ async def get_users(request: Request):
     )
 
 
-@app.post("/", response_class=HTMLResponse)
-async def registration(request: Request):
+@app.post("/registration/", response_class=HTMLResponse)
+async def get_users(request: Request):
     return templates.TemplateResponse("registration.html", {"request": request})
 
 
-@app.post("/registration/")
+@app.post("/registration")
 async def registration_successful(name=Form(), email=Form(), password=Form()):
     new_user = UserIn(name=name, email=email, password=password)
     if new_user:
