@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, session
 
 app = Flask(__name__)
 
-app.secret_key = "4f8cc245e5e09ba315d1060ba656ab43a2e11f75a909c3a77accd3b7a6f308a7"
+app.secret_key = b"4f8cc245e5e09ba315d1060ba656ab43a2e11f75a909c3a77accd3b7a6f308a7"
 
 # генерация надежного секретного ключа
 # python
