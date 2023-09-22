@@ -70,3 +70,21 @@ async def delete_order(order_id: int):
     query = orders.delete().where(orders.c.id == order_id)
     await database.execute(query)
     return {"message": "order deleted"}
+
+
+# query = select(
+#         orders.c.id,
+#         orders.c.order_date,
+#         orders.c.status,
+#         products.c.id.label("products_id"),
+#         products.c.name,
+#         products.c.description,
+#         products.c.price,
+#         users.c.id.label("user_id"),
+#         users.c.username,
+#         users.c.email,
+#     )
+#     .join(products)
+#     .join(users)
+#
+# await database.fetch_all(query)
